@@ -1,0 +1,69 @@
+.hero {
+  position: relative;
+  background: linear-gradient(90deg, #1aa34a, #28c76f);
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 40px;
+  overflow: hidden;
+  border-radius: 0 0 25px 25px;
+}
+
+.hero-content {
+  max-width: 650px;
+  z-index: 100;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.highlight {
+  color: #fff86b;
+}
+
+.subtitle {
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+.price {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.hero-btn {
+  margin-top: 20px;
+  background: black;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.hero-btn:hover {
+  transform: scale(1.05);
+}
+
+.hero-img {
+  position: absolute;
+  width: 300px;
+  z-index: 50;
+}
+
+.hero-img.left {
+  left: -40px;
+  bottom: 0;
+}
+
+.hero-img.right {
+  right: -40px;
+  bottom: 0;
+}

@@ -1,16 +1,15 @@
-import MainBanner from "../common/MainBanner.tsx";
-import Register from "./Register.tsx";
+import HeroSection from "../common/HeroSection";
+import MainBanner from "../common/MainBanner";
+import Register from "./Register";
 
 function Home() {
-
-    return (
-        <>
-           <MainBanner/>
-           <Register/>
-
-        </>
-    );
+  return (
+    <>
+      <HeroSection />
+      <MainBanner />
+      <Register />
+    </>
+  );
 }
 
-
-export default Home
+export default Home;

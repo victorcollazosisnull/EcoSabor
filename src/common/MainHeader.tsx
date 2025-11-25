@@ -1,11 +1,12 @@
 function MainHeader() {
     return (
-        <header id="main-header">
-            <div className='container'>
-                <h1>Tecsup</h1>
-                <p>Desarrollo de Videojuegos en Soluciones Cloud</p>
+        <header id="main-header" className="bg-light py-3">
+            <div className='container text-center'>
+                <h1 className="fw-bold">ECO SABOR</h1>
+                <p className="text-muted">Kits de Cocina – Experiencia Peruana</p> 
             </div>
         </header>
     )
 }
-export default MainHeader
+
+export default MainHeader;

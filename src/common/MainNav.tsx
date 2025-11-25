@@ -16,36 +16,60 @@ function MainNav() {
   const handleLogout = () => {
     localStorage.removeItem("user");
     setUsername(null);
-    navigate("/login");
+    navigate("/");
   };
 
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top bg-dark" >
+    <nav className="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
       <div className="container">
+
+        {/* Logo / Nombre */}
+        <Link className="navbar-brand fw-bold" to="/">
+          Eco Sabor
+        </Link>
+
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          {/* MENÚ PRINCIPAL */}
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+
             <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
+              <Link className="nav-link" to="/">Inicio</Link>
             </li>
+
             <li className="nav-item">
-              <Link className="nav-link" to="/game">Game</Link>
+              <Link className="nav-link" to="/kits">Nuestros Kits</Link>
             </li>
-            {!username && (
-              <li className="nav-item">
-                <Link className="nav-link" to="/login">Login</Link>
-              </li>
-            )}
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/sobre">Sobre Nosotros</Link>
+            </li>
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/como">Cómo Funciona</Link>
+            </li>
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/beneficios">Beneficios</Link>
+            </li>
+
           </ul>
 
+          {/* LOGIN (solo si hay usuario) */}
           {username && (
             <div className="d-flex align-items-center ms-auto">
-              <span className="me-3">Hello, <strong>{username}</strong></span>
+              <span className="me-3">
+                Hola, <strong>{username}</strong>
+              </span>
               <button
-                className="btn btn-outline-danger btn-sm" onClick={handleLogout}>
+                className="btn btn-outline-danger btn-sm"
+                onClick={handleLogout}
+              >
                 Logout
               </button>
             </div>
           )}
+
         </div>
       </div>
     </nav>

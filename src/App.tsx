@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Kits from "./pages/Kits";
 import Sobre from "./pages/Sobre";
@@ -11,20 +11,20 @@ import MainFooter from "./common/MainFooter";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <MainHeader />
       <MainNav />
 
-     <Routes>
-  <Route path="/" element={<Home />} />
-  <Route path="/kits" element={<Kits />} />
-  <Route path="/sobre" element={<Sobre />} />
-  <Route path="/como" element={<ComoFunciona />} />
-  <Route path="/beneficios" element={<Beneficios />} />
-</Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/kits" element={<Kits />} />
+        <Route path="/sobre" element={<Sobre />} />
+        <Route path="/como" element={<ComoFunciona />} />
+        <Route path="/beneficios" element={<Beneficios />} />
+      </Routes>
 
       <MainFooter />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

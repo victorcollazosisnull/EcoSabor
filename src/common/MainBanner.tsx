@@ -17,7 +17,7 @@ function MainBanner() {
         {/* SLIDE 1 */}
         <div className="carousel-item active">
           <img src={banner1} className="d-block w-100" alt="banner1" />
-          <div className="carousel-caption">
+          <div className="carousel-caption custom-caption">
             <h5>Eco Sabor</h5>
             <p>Kits de cocina listos, frescos y ecológicos.</p>
 
@@ -30,7 +30,7 @@ function MainBanner() {
         {/* SLIDE 2 */}
         <div className="carousel-item">
           <img src={banner2} className="d-block w-100" alt="banner2" />
-          <div className="carousel-caption">
+          <div className="carousel-caption custom-caption">
             <h5>Experiencia Peruana</h5>
             <p>Platos tradicionales listos para cocinar.</p>
 
@@ -43,7 +43,7 @@ function MainBanner() {
         {/* SLIDE 3 */}
         <div className="carousel-item">
           <img src={banner3} className="d-block w-100" alt="banner3" />
-          <div className="carousel-caption">
+          <div className="carousel-caption custom-caption">
             <h5>Solución práctica</h5>
             <p>Ahorra tiempo sin sacrificar sabor.</p>
 

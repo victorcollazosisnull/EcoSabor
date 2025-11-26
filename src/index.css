@@ -196,3 +196,48 @@ h3 {
     transform: rotate(360deg);
   }
 }
+
+.carousel-caption.custom-caption {
+  position: absolute !important;
+  bottom: 32% !important;
+  transform: translateY(20%);
+  z-index: 5 !important;
+}
+
+/* MEJORA DE VISIBILIDAD DEL TEXTO DEL CAROUSEL */
+.custom-caption h5,
+.custom-caption p {
+  color: #fff !important;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
+  font-weight: 700;
+}
+
+/* CAJA NEGRA SUAVE DETRÁS DEL TEXTO */
+.custom-caption {
+  padding: 12px 15px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.35); /* 35% negro */
+  backdrop-filter: blur(3px);
+  display: inline-block;
+}
+
+.custom-caption .btn {
+  transform: scale(1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+}
+
+.custom-caption .btn:hover {
+  transform: scale(1.12);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+.carousel-caption.custom-caption {
+  background: rgba(0, 0, 0, 0.45); 
+  padding: 12px 15px;             
+  display: inline-block;  
+  border-radius: 8px;       
+}
+body {
+  background-color: #e5fadc !important; /* verde claro */
+}

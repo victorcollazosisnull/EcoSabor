@@ -1,0 +1,63 @@
+.kits-section {
+  padding: 60px 20px;
+  max-width: 1300px;
+  margin: auto;
+  text-align: center;
+}
+
+.kits-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.kits-subtitle {
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.kits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 30px;
+}
+
+.kit-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.kit-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 22px rgba(0,0,0,0.18);
+}
+
+.kit-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.kit-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 15px 20px 10px;
+}
+
+.kit-card p {
+  font-size: 16px;
+  margin: 0 20px 20px;
+  color: #555;
+}
+.page-container {
+  padding: 60px 20px;
+  text-align: center;
+  background: #e9f5ec; /* Verde suave ecológico */
+  min-height: 100vh; /* Para que cubra toda la pantalla */
+}

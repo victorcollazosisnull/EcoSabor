@@ -1,0 +1,58 @@
+.about {
+  padding: 90px 25px;
+  background: linear-gradient(135deg, #e7f7ec, #d2f1db); /* verde claro moderno */
+  display: flex;
+  justify-content: center;
+}
+
+.about-content {
+  max-width: 900px;
+  background: #ffffffdd; /* blanco con leve transparencia */
+  padding: 50px 55px;
+  border-radius: 30px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(6px);
+  text-align: center;
+  border: 2px solid #cce9d5;
+}
+
+.about h2 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  font-weight: 800;
+  color: #1b6b3a; /* verde oscuro ecológico */
+}
+
+.about p {
+  font-size: 1.25rem;
+  line-height: 1.75;
+  margin-bottom: 22px;
+  color: #2f4738;
+}
+.about-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.about-card {
+  max-width: 900px;
+  background: #ffffffa0; /* blanco semi-transparente */
+  padding: 35px 40px;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(4px);
+}
+
+.about-card h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.about-card p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
